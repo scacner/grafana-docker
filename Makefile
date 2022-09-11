@@ -2,6 +2,7 @@
 .PHONY: docker stop clean
 
 docker:
+	docker-compose pull
 	docker-compose build
 	docker-compose up -d
 
